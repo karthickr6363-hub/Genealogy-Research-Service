@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources | Genealogy Research Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { heritage: { blue: '#102A43', white: '#F7F3E9', gold: '#C9A24D' } },
+                    fontFamily: { serif: ['"Playfair Display"', 'serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-heritage-blue text-heritage-white pt-24">
+    <div id="nav-container"></div>
+    
+    <!-- HERO SECTION -->
+    <section class="py-20 px-10">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-serif mb-6">Genealogy Resources</h1>
+            <p class="text-xl text-heritage-gold tracking-widest uppercase mb-8">Tools & Guides for Your Research Journey</p>
+            <p class="text-lg text-heritage-white/80 max-w-3xl mx-auto leading-relaxed">
+                Whether you're just beginning your family history research or looking to expand your knowledge, 
+                our comprehensive resources provide expert guidance and valuable insights.
+            </p>
+        </div>
+    </section>
+
+    <!-- RESEARCH GUIDES -->
+    <section class="py-20 px-10 bg-gradient-to-b from-heritage-blue to-black/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Research Guides</h2>
+                <div class="w-24 h-1 bg-heritage-gold mx-auto"></div>
+                <p class="mt-6 text-lg text-heritage-white/70">Expert-written guides to accelerate your research</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Beginner's Guide -->
+                <div class="bg-[#F7F3E9]/5 p-8 border border-white/10 rounded-lg hover:border-heritage-gold/30 transition-all">
+                    <div class="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">Beginner's Guide</h3>
+                    <p class="text-heritage-white/70 mb-6">
+                        Start your genealogy journey with our comprehensive beginner's guide covering 
+                        basic research methods, essential documents, and common pitfalls to avoid.
+                    </p>
+                    <ul class="text-sm text-heritage-white/60 space-y-2 mb-6">
+                        <li>• Getting started checklist</li>
+                        <li>• Essential family documents</li>
+                        <li>• Interview techniques</li>
+                        <li>• Organization tips</li>
+                    </ul>
+                    <a href="#" class="text-heritage-gold text-sm font-bold uppercase tracking-widest hover:opacity-70 transition-opacity">
+                        Download PDF →
+                    </a>
+                </div>
+
+                <!-- DNA Research Guide -->
+                <div class="bg-[#F7F3E9]/5 p-8 border border-white/10 rounded-lg hover:border-heritage-gold/30 transition-all">
+                    <div class="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">DNA Research Guide</h3>
+                    <p class="text-heritage-white/70 mb-6">
+                        Understand how to effectively use DNA testing in genealogy research, from choosing 
+                        the right test to interpreting results and finding genetic matches.
+                    </p>
+                    <ul class="text-sm text-heritage-white/60 space-y-2 mb-6">
+                        <li>• DNA testing comparison</li>
+                        <li>• Ethnicity breakdown analysis</li>
+                        <li>• Cousin matching strategies</li>
+                        <li>• Triangulation methods</li>
+                    </ul>
+                    <a href="#" class="text-heritage-gold text-sm font-bold uppercase tracking-widest hover:opacity-70 transition-opacity">
+                        Download PDF →
+                    </a>
+                </div>
+
+                <!-- International Research -->
+                <div class="bg-[#F7F3E9]/5 p-8 border border-white/10 rounded-lg hover:border-heritage-gold/30 transition-all">
+                    <div class="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">International Research</h3>
+                    <p class="text-heritage-white/70 mb-6">
+                        Navigate the complexities of international genealogy research with guides covering 
+                        foreign records, translation services, and cross-border documentation.
+                    </p>
+                    <ul class="text-sm text-heritage-white/60 space-y-2 mb-6">
+                        <li>• European record systems</li>
+                        <li>• Translation resources</li>
+                        <li>• Immigration patterns</li>
+                        <li>• Archive access guides</li>
+                    </ul>
+                    <a href="#" class="text-heritage-gold text-sm font-bold uppercase tracking-widest hover:opacity-70 transition-opacity">
+                        Download PDF →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ONLINE DATABASES -->
+    <section class="py-20 px-10 bg-heritage-white text-heritage-blue">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Online Databases</h2>
+                <div class="w-24 h-1 bg-heritage-gold mx-auto"></div>
+                <p class="mt-6 text-lg text-heritage-blue/70">Curated list of essential genealogy databases</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Free Databases -->
+                <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                    <h3 class="text-lg font-semibold mb-4 text-heritage-gold">Free Resources</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">FamilySearch.org</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">USGenWeb Project</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Cyndi's List</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">National Archives</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Library of Congress</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Ellis Island Records</a></li>
+                    </ul>
+                </div>
+
+                <!-- Subscription Databases -->
+                <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                    <h3 class="text-lg font-semibold mb-4 text-heritage-gold">Subscription Services</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Ancestry.com</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">MyHeritage</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">FindMyPast</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">GenealogyBank</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Newspapers.com</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Fold3 (Military)</a></li>
+                    </ul>
+                </div>
+
+                <!-- DNA Databases -->
+                <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                    <h3 class="text-lg font-semibold mb-4 text-heritage-gold">DNA Testing</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">AncestryDNA</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">23andMe</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">FamilyTreeDNA</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">MyHeritage DNA</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Living DNA</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">GEDmatch</a></li>
+                    </ul>
+                </div>
+
+                <!-- International Archives -->
+                <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                    <h3 class="text-lg font-semibold mb-4 text-heritage-gold">International</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">UK National Archives</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Irish Genealogy</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Scottish Records</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Canadian Archives</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">Australian Records</a></li>
+                        <li><a href="#" class="text-heritage-blue hover:text-heritage-gold transition-colors">European Archives</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH TOOLS -->
+    <section class="py-20 px-10 bg-gradient-to-b from-heritage-blue to-black/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Research Tools</h2>
+                <div class="w-24 h-1 bg-heritage-gold mx-auto"></div>
+                <p class="mt-6 text-lg text-heritage-white/70">Software and tools to organize your research</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Family Tree Software -->
+                <div class="bg-[#F7F3E9]/5 p-8 border border-white/10 rounded-lg">
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">Family Tree Software</h3>
+                    <p class="text-heritage-white/70 mb-6">
+                        Professional software for building and maintaining your family tree with advanced features.
+                    </p>
+                    <ul class="text-sm text-heritage-white/60 space-y-2">
+                        <li>• <strong>Family Tree Maker</strong> - Comprehensive desktop software</li>
+                        <li>• <strong>Legacy Family Tree</strong> - Feature-rich genealogy program</li>
+                        <li>• <strong>RootsMagic</strong> - Powerful research tool</li>
+                        <li>• <strong>Gramps</strong> - Free open-source option</li>
+                    </ul>
+                </div>
+
+                <!-- Note-Taking Tools -->
+                <div class="bg-[#F7F3E9]/5 p-8 border border-white/10 rounded-lg">
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">Research Organization</h3>
+                    <p class="text-heritage-white/70 mb-6">
+                        Tools to organize your research findings, documents, and sources effectively.
+                    </p>
+                    <ul class="text-sm text-heritage-white/60 space-y-2">
+                        <li>• <strong>Evernote</strong> - Digital note organization</li>
+                        <li>• <strong>OneNote</strong> - Microsoft's research tool</li>
+                        <li>• <strong>Notion</strong> - All-in-one workspace</li>
+                        <li>• <strong>Zotero</strong> - Citation management</li>
+                    </ul>
+                </div>
+
+                <!-- Photo Restoration -->
+                <div class="bg-[#F7F3E9]/5 p-8 border border-white/10 rounded-lg">
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">Photo & Document Tools</h3>
+                    <p class="text-heritage-white/70 mb-6">
+                        Software and services for restoring, enhancing, and preserving historical photos and documents.
+                    </p>
+                    <ul class="text-sm text-heritage-white/60 space-y-2">
+                        <li>• <strong>Adobe Photoshop</strong> - Professional restoration</li>
+                        <li>• <strong>GIMP</strong> - Free photo editing</li>
+                        <li>• <strong>MyHeritage Photo Enhancer</strong> - AI-powered</li>
+                        <li>• <strong>CamScanner</strong> - Document scanning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATIONAL CONTENT -->
+    <section class="py-20 px-10 bg-heritage-white text-heritage-blue">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Educational Content</h2>
+                <div class="w-24 h-1 bg-heritage-gold mx-auto"></div>
+                <p class="mt-6 text-lg text-heritage-blue/70">Learn from our expert researchers</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Webinars -->
+                <div>
+                    <h3 class="text-2xl font-serif mb-6 text-heritage-gold">Free Webinars</h3>
+                    <div class="space-y-4">
+                        <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                            <h4 class="font-semibold mb-2">Breaking Through Brick Walls</h4>
+                            <p class="text-sm text-heritage-blue/70 mb-2">Learn advanced techniques for overcoming research obstacles</p>
+                            <span class="text-xs text-heritage-gold">Next session: March 15, 2024</span>
+                        </div>
+                        <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                            <h4 class="font-semibold mb-2">DNA for Genealogists</h4>
+                            <p class="text-sm text-heritage-blue/70 mb-2">Understanding genetic genealogy and its applications</p>
+                            <span class="text-xs text-heritage-gold">Next session: March 22, 2024</span>
+                        </div>
+                        <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                            <h4 class="font-semibold mb-2">International Research Methods</h4>
+                            <p class="text-sm text-heritage-blue/70 mb-2">Strategies for researching ancestors outside the US</p>
+                            <span class="text-xs text-heritage-gold">Next session: March 29, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog & Articles -->
+                <div>
+                    <h3 class="text-2xl font-serif mb-6 text-heritage-gold">Research Blog</h3>
+                    <div class="space-y-4">
+                        <article class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                            <h4 class="font-semibold mb-2">10 Essential Documents Every Genealogist Needs</h4>
+                            <p class="text-sm text-heritage-blue/70 mb-2">Discover the key documents that can unlock your family history</p>
+                            <a href="#" class="text-heritage-gold text-sm hover:opacity-70">Read more →</a>
+                        </article>
+                        <article class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                            <h4 class="font-semibold mb-2">Understanding Census Records Across Decades</h4>
+                            <p class="text-sm text-heritage-blue/70 mb-2">How to extract maximum information from census data</p>
+                            <a href="#" class="text-heritage-gold text-sm hover:opacity-70">Read more →</a>
+                        </article>
+                        <article class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                            <h4 class="font-semibold mb-2">Preserving Family Photos for Future Generations</h4>
+                            <p class="text-sm text-heritage-blue/70 mb-2">Best practices for digitizing and storing historical images</p>
+                            <a href="#" class="text-heritage-gold text-sm hover:opacity-70">Read more →</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 px-10 bg-gradient-to-b from-heritage-blue to-black/20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-serif mb-6">Need Professional Help?</h2>
+            <p class="text-xl text-heritage-white/80 mb-8">
+                Our expert researchers are here to help you overcome any research challenges
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="./process.html" class="gold-btn">Schedule Consultation</a>
+                <a href="./services.html" class="px-8 py-3 border border-heritage-gold text-heritage-gold hover:bg-heritage-gold hover:text-heritage-blue transition-all">
+                    View Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./src/components/navbar.js"></script><script src="./main.js"></script>
+<div id="footer-container"></div><script src="./src/components/footer.js"></script></body>
+
+</html>

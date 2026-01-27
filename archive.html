@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Archive | Genealogy Research Service</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        heritage: {
+                            blue: '#102A43',
+                            white: '#F7F3E9',
+                            gold: '#C9A24D',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-heritage-blue text-heritage-white pt-24">
+    <div id="nav-container"></div>
+
+    <!-- HERO SECTION -->
+    <section class="py-20 px-10">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-serif mb-6">Research Archive</h1>
+            <p class="text-xl text-heritage-gold tracking-widest uppercase mb-8">Historical Documents & Records</p>
+            <p class="text-lg text-heritage-white/80 max-w-3xl mx-auto leading-relaxed">
+                Access our comprehensive collection of digitized historical documents, photographs, 
+                and genealogical records spanning centuries of family history research.
+            </p>
+        </div>
+    </section>
+
+    <!-- ARCHIVE STATISTICS -->
+    <section class="py-20 px-10 bg-gradient-to-b from-heritage-blue to-black/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-serif text-heritage-gold mb-4">2.5M+</div>
+                    <h3 class="text-xl font-semibold mb-2">Digitized Records</h3>
+                    <p class="text-heritage-white/70 text-sm">Historical documents from 50+ countries</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-serif text-heritage-gold mb-4">150K+</div>
+                    <h3 class="text-xl font-semibold mb-2">Photographs</h3>
+                    <p class="text-heritage-white/70 text-sm">Restored family photos and historical images</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-serif text-heritage-gold mb-4">800+</div>
+                    <h3 class="text-xl font-semibold mb-2">Family Trees</h3>
+                    <p class="text-heritage-white/70 text-sm">Completed genealogical research projects</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-serif text-heritage-gold mb-4">24/7</div>
+                    <h3 class="text-xl font-semibold mb-2">Digital Access</h3>
+                    <p class="text-heritage-white/70 text-sm">Secure online archive availability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COLLECTION CATEGORIES -->
+    <section class="py-20 px-10 bg-heritage-white text-heritage-blue">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Archive Collections</h2>
+                <div class="w-24 h-1 bg-heritage-gold mx-auto"></div>
+                <p class="mt-6 text-lg text-heritage-blue/70">Browse our extensive historical record collections</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Vital Records -->
+                <div class="bg-[#F7F3E9]/5 p-8 rounded-lg border border-heritage-blue/20 hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">Vital Records</h3>
+                    <p class="text-heritage-blue/70 mb-6">
+                        Birth, marriage, death certificates, and civil registration records from 
+                        multiple countries and time periods.
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Records:</span>
+                            <span class="text-heritage-gold font-semibold">450,000+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Time Period:</span>
+                            <span class="text-heritage-gold font-semibold">1600-1950</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Countries:</span>
+                            <span class="text-heritage-gold font-semibold">25+</span>
+                        </div>
+                    </div>
+                    <a href="#" class="mt-4 inline-block text-heritage-gold text-sm font-semibold hover:opacity-70 transition-opacity">
+                        Browse Collection →
+                    </a>
+                </div>
+
+                <!-- Military Records -->
+                <div class="bg-[#F7F3E9]/5 p-8 rounded-lg border border-heritage-blue/20 hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 3h18v18H3V3zm16 16H5V5h14v14zM7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">Military Records</h3>
+                    <p class="text-heritage-blue/70 mb-6">
+                        Service records, pension files, draft registrations, and military honors 
+                        from major conflicts and peacekeeping operations.
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Records:</span>
+                            <span class="text-heritage-gold font-semibold">180,000+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Conflicts:</span>
+                            <span class="text-heritage-gold font-semibold">12 Major Wars</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Countries:</span>
+                            <span class="text-heritage-gold font-semibold">15+</span>
+                        </div>
+                    </div>
+                    <a href="#" class="mt-4 inline-block text-heritage-gold text-sm font-semibold hover:opacity-70 transition-opacity">
+                        Browse Collection →
+                    </a>
+                </div>
+
+                <!-- Immigration Records -->
+                <div class="bg-[#F7F3E9]/5 p-8 rounded-lg border border-heritage-blue/20 hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">Immigration Records</h3>
+                    <p class="text-heritage-blue/70 mb-6">
+                        Passenger lists, naturalization papers, visas, and border crossing 
+                        documents documenting migration patterns worldwide.
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Records:</span>
+                            <span class="text-heritage-gold font-semibold">320,000+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Time Period:</span>
+                            <span class="text-heritage-gold font-semibold">1820-1960</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Ports:</span>
+                            <span class="text-heritage-gold font-semibold">50+</span>
+                        </div>
+                    </div>
+                    <a href="#" class="mt-4 inline-block text-heritage-gold text-sm font-semibold hover:opacity-70 transition-opacity">
+                        Browse Collection →
+                    </a>
+                </div>
+
+                <!-- Census Records -->
+                <div class="bg-[#F7F3E9]/5 p-8 rounded-lg border border-heritage-blue/20 hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">Census Records</h3>
+                    <p class="text-heritage-blue/70 mb-6">
+                        National and regional census data, population schedules, and statistical 
+                        records providing demographic insights.
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Records:</span>
+                            <span class="text-heritage-gold font-semibold">280,000+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Years:</span>
+                            <span class="text-heritage-gold font-semibold">1790-1950</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Countries:</span>
+                            <span class="text-heritage-gold font-semibold">20+</span>
+                        </div>
+                    </div>
+                    <a href="#" class="mt-4 inline-block text-heritage-gold text-sm font-semibold hover:opacity-70 transition-opacity">
+                        Browse Collection →
+                    </a>
+                </div>
+
+                <!-- Church Records -->
+                <div class="bg-[#F7F3E9]/5 p-8 rounded-lg border border-heritage-blue/20 hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">Church Records</h3>
+                    <p class="text-heritage-blue/70 mb-6">
+                        Parish registers, baptismal records, marriage certificates, and burial 
+                        records from various religious denominations.
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Records:</span>
+                            <span class="text-heritage-gold font-semibold">520,000+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Time Period:</span>
+                            <span class="text-heritage-gold font-semibold">1500-1900</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Denominations:</span>
+                            <span class="text-heritage-gold font-semibold">15+</span>
+                        </div>
+                    </div>
+                    <a href="#" class="mt-4 inline-block text-heritage-gold text-sm font-semibold hover:opacity-70 transition-opacity">
+                        Browse Collection →
+                    </a>
+                </div>
+
+                <!-- Photographs -->
+                <div class="bg-[#F7F3E9]/5 p-8 rounded-lg border border-heritage-blue/20 hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-serif mb-4 text-heritage-gold">Historical Photographs</h3>
+                    <p class="text-heritage-blue/70 mb-6">
+                        Family portraits, historical locations, community photos, and restored 
+                        images from personal and public collections.
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Photos:</span>
+                            <span class="text-heritage-gold font-semibold">150,000+</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Time Period:</span>
+                            <span class="text-heritage-gold font-semibold">1840-1960</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-heritage-blue/60">Restored:</span>
+                            <span class="text-heritage-gold font-semibold">45,000+</span>
+                        </div>
+                    </div>
+                    <a href="#" class="mt-4 inline-block text-heritage-gold text-sm font-semibold hover:opacity-70 transition-opacity">
+                        Browse Collection →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH INTERFACE -->
+    <section class="py-20 px-10 bg-gradient-to-b from-heritage-blue to-black/20">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Search the Archive</h2>
+                <div class="w-24 h-1 bg-heritage-gold mx-auto"></div>
+                <p class="mt-6 text-lg text-heritage-white/70">Search our extensive database of historical records</p>
+            </div>
+            
+            <div class="bg-white/5 border border-white/10 p-10 rounded-lg">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm uppercase tracking-widest text-heritage-gold mb-2">Last Name</label>
+                            <input type="text" 
+                                class="w-full bg-black/30 border border-white/10 px-4 py-3 outline-none focus:border-heritage-gold text-heritage-white" 
+                                placeholder="Enter surname" />
+                        </div>
+                        <div>
+                            <label class="block text-sm uppercase tracking-widest text-heritage-gold mb-2">First Name</label>
+                            <input type="text" 
+                                class="w-full bg-black/30 border border-white/10 px-4 py-3 outline-none focus:border-heritage-gold text-heritage-white" 
+                                placeholder="Enter given name" />
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-sm uppercase tracking-widest text-heritage-gold mb-2">Record Type</label>
+                            <select class="w-full bg-black/30 border border-white/10 px-4 py-3 outline-none focus:border-heritage-gold text-heritage-white">
+                                <option value="">All Records</option>
+                                <option value="vital">Vital Records</option>
+                                <option value="military">Military Records</option>
+                                <option value="immigration">Immigration Records</option>
+                                <option value="census">Census Records</option>
+                                <option value="church">Church Records</option>
+                                <option value="photos">Photographs</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm uppercase tracking-widest text-heritage-gold mb-2">Location</label>
+                            <input type="text" 
+                                class="w-full bg-black/30 border border-white/10 px-4 py-3 outline-none focus:border-heritage-gold text-heritage-white" 
+                                placeholder="City, State, Country" />
+                        </div>
+                        <div>
+                            <label class="block text-sm uppercase tracking-widest text-heritage-gold mb-2">Time Period</label>
+                            <select class="w-full bg-black/30 border border-white/10 px-4 py-3 outline-none focus:border-heritage-gold text-heritage-white">
+                                <option value="">All Time Periods</option>
+                                <option value="1800s">1800s</option>
+                                <option value="1900s">1900s</option>
+                                <option value="2000s">2000s</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="exact" class="mr-3">
+                            <label for="exact" class="text-sm text-heritage-white/70">
+                                Exact match only
+                            </label>
+                        </div>
+                        <button type="submit" class="gold-btn">Search Archive</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECENT ADDITIONS -->
+    <section class="py-20 px-10 bg-heritage-white text-heritage-blue">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Recent Additions</h2>
+                <div class="w-24 h-1 bg-heritage-gold mx-auto"></div>
+                <p class="mt-6 text-lg text-heritage-blue/70">Newly digitized records added this month</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                    <h4 class="font-semibold mb-2 text-heritage-gold">Irish Civil Records</h4>
+                    <p class="text-sm text-heritage-blue/70 mb-2">Birth, marriage, and death records 1864-1950</p>
+                    <span class="text-xs text-heritage-gold">Added: March 1, 2024</span>
+                </div>
+                <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                    <h4 class="font-semibold mb-2 text-heritage-gold">WWI Draft Cards</h4>
+                    <p class="text-sm text-heritage-blue/70 mb-2">Complete US draft registration cards 1917-1918</p>
+                    <span class="text-xs text-heritage-gold">Added: February 28, 2024</span>
+                </div>
+                <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                    <h4 class="font-semibold mb-2 text-heritage-gold">Ellis Island Manifests</h4>
+                    <p class="text-sm text-heritage-blue/70 mb-2">Passenger lists 1892-1924, newly indexed</p>
+                    <span class="text-xs text-heritage-gold">Added: February 25, 2024</span>
+                </div>
+                <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-heritage-blue/20">
+                    <h4 class="font-semibold mb-2 text-heritage-gold">Victorian Photos</h4>
+                    <p class="text-sm text-heritage-blue/70 mb-2">Restored family portraits 1860-1901</p>
+                    <span class="text-xs text-heritage-gold">Added: February 20, 2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 px-10 bg-gradient-to-b from-heritage-blue to-black/20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-serif mb-6">Need Help with Research?</h2>
+            <p class="text-xl text-heritage-white/80 mb-8">
+                Our expert researchers can help you navigate our extensive archive collections
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="./process.html" class="gold-btn">Schedule Consultation</a>
+                <a href="./services.html" class="px-8 py-3 border border-heritage-gold text-heritage-gold hover:bg-heritage-gold hover:text-heritage-blue transition-all">
+                    View Research Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./src/components/navbar.js"></script><script src="./main.js"></script>
+<div id="footer-container"></div><script src="./src/components/footer.js"></script></body>
+
+</html>

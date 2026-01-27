@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Portal | Genealogy Research Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        heritage: { blue: '#102A43', white: '#F7F3E9', gold: '#C9A24D' }
+                    },
+                    fontFamily: { serif: ['"Playfair Display"', 'serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-heritage-blue text-heritage-white min-h-screen">
+    <div id="nav-container"></div>
+    
+    <div class="flex items-center justify-center min-h-screen px-10 py-20">
+        <div class="max-w-6xl w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Login Section -->
+                <div>
+                    <div class="text-center mb-10">
+                        <a href="./index.html"
+                            class="inline-block text-4xl font-serif text-heritage-gold tracking-widest mb-6">Heritage Research</a>
+                        <h1 class="text-2xl uppercase tracking-widest border-t border-heritage-gold/20 pt-6">Secure Client Portal</h1>
+                        <p class="mt-4 text-heritage-white/80">
+                            Access your research progress, documents, and collaborate with our expert genealogists.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white/5 border border-white/10 p-10 rounded-lg backdrop-blur-sm">
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm uppercase tracking-widest text-heritage-gold mb-2">Email Address</label>
+                                <input type="email"
+                                    class="w-full bg-black/30 border border-white/10 px-4 py-3 text-heritage-white focus:border-heritage-gold outline-none transition-all"
+                                    placeholder="your.email@example.com" />
+                            </div>
+                            <div>
+                                <label class="block text-sm uppercase tracking-widest text-heritage-gold mb-2">Password</label>
+                                <input type="password"
+                                    class="w-full bg-black/30 border border-white/10 px-4 py-3 text-heritage-white focus:border-heritage-gold outline-none transition-all"
+                                    placeholder="••••••••" />
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="remember" class="mr-2">
+                                    <label for="remember" class="text-sm text-heritage-white/70">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <a href="#" class="text-sm text-heritage-gold hover:opacity-70 transition-opacity">
+                                    Forgot password?
+                                </a>
+                            </div>
+                            <button type="button" onclick="window.location.href='./dashboard.html'"
+                                class="w-full gold-btn mt-6">Access Portal</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div>
+                    <h2 class="text-3xl font-serif mb-8 text-heritage-gold">Portal Features</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-heritage-gold rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Research Progress Tracking</h3>
+                                <p class="text-heritage-white/70">
+                                    Monitor your family research progress in real-time with detailed milestones and updates.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-heritage-gold rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Digital Document Vault</h3>
+                                <p class="text-heritage-white/70">
+                                    Secure access to all your research documents, photos, and family tree files.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-heritage-gold rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Direct Researcher Communication</h3>
+                                <p class="text-heritage-white/70">
+                                    Message your dedicated genealogist and receive updates directly through the portal.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-heritage-gold rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Secure Data Protection</h3>
+                                <p class="text-heritage-white/70">
+                                    Your family information is protected with enterprise-grade security and encryption.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 p-6 bg-heritage-gold/10 border border-heritage-gold/20 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-3 text-heritage-gold">New to Heritage Research?</h3>
+                        <p class="text-heritage-white/80 mb-4">
+                            Create an account to start your family history journey with our expert researchers.
+                        </p>
+                        <a href="./process.html" class="inline-block text-heritage-gold font-semibold hover:opacity-70 transition-opacity">
+                            Get Started →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="./src/components/navbar.js"></script><script src="./main.js"></script>
+</body>
+
+</html>

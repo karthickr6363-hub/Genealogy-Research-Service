@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Studies | Genealogy Research Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { heritage: { blue: '#102A43', white: '#F7F3E9', gold: '#C9A24D' } },
+                    fontFamily: { serif: ['"Playfair Display"', 'serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-heritage-blue text-heritage-white pt-24">
+    <div id="nav-container"></div>
+    
+    <!-- HERO SECTION -->
+    <section class="py-20 px-10">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-serif mb-6">Documented Discoveries</h1>
+            <p class="text-xl text-heritage-gold tracking-widest uppercase mb-8">Real Families, Real Stories, Real Results</p>
+            <p class="text-lg text-heritage-white/80 max-w-3xl mx-auto leading-relaxed">
+                Each case study represents months of meticulous research, countless hours in archives worldwide, 
+                and the emotional moment when families finally connect with their ancestral heritage.
+            </p>
+        </div>
+    </section>
+
+    <!-- FEATURED CASE STUDIES -->
+    <section class="py-20 px-10 bg-gradient-to-b from-heritage-blue to-black/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Case Study 1 -->
+                <article class="group">
+                    <div class="aspect-video bg-white/5 border border-white/10 relative overflow-hidden mb-8">
+                        <img src="https://images.unsplash.com/photo-1572947650440-e8a97ef053b2?auto=format&fit=crop&q=80&w=1200"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-heritage-blue to-transparent opacity-60"></div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 text-sm">
+                            <span class="px-3 py-1 bg-heritage-gold/20 text-heritage-gold rounded-full">Irish Heritage</span>
+                            <span class="px-3 py-1 bg-heritage-gold/20 text-heritage-gold rounded-full">Migration Research</span>
+                            <span class="text-heritage-white/60">12 generations • 3 countries</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-heritage-gold">The Vanishing Meyer Surnames</h2>
+                        <p class="text-heritage-white/80 leading-relaxed mb-6">
+                            When the Meyer family approached us, they had hit a 20-year brick wall trying to trace 
+                            their German ancestry. Their great-grandfather had arrived in America in 1882, but all 
+                            records seemed to end at Ellis Island.
+                        </p>
+                        <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-white/10">
+                            <h3 class="text-xl font-semibold mb-3 text-heritage-gold">The Breakthrough</h3>
+                            <p class="text-heritage-white/70 text-sm leading-relaxed mb-4">
+                                Our researchers discovered that the family name had been anglicized from "Meier" to "Meyer" 
+                                during processing at Ellis Island. By cross-referencing ship manifests with German parish 
+                                records from Baden-Württemberg, we traced the family back to 1642.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Duration:</span>
+                                    <span class="text-heritage-white/60 ml-2">18 months</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Documents:</span>
+                                    <span class="text-heritage-white/60 ml-2">47 verified</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Countries:</span>
+                                    <span class="text-heritage-white/60 ml-2">Germany, USA, Canada</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Living Relatives:</span>
+                                    <span class="text-heritage-white/60 ml-2">12 found</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/10 pt-4">
+                            <p class="text-heritage-gold italic">
+                                "Finding our German roots after all these years has been life-changing. 
+                                We even connected with cousins we never knew existed in Stuttgart!"
+                            </p>
+                            <p class="text-heritage-white/60 text-sm mt-2">— Robert Meyer, Chicago, IL</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case Study 2 -->
+                <article class="group">
+                    <div class="aspect-video bg-white/5 border border-white/10 relative overflow-hidden mb-8">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&q=80&w=1200"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-heritage-blue to-transparent opacity-60"></div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 text-sm">
+                            <span class="px-3 py-1 bg-heritage-gold/20 text-heritage-gold rounded-full">Japanese Heritage</span>
+                            <span class="px-3 py-1 bg-heritage-gold/20 text-heritage-gold rounded-full">DNA Analysis</span>
+                            <span class="text-heritage-white/60">6 generations • 2 countries</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-heritage-gold">The Samurai's Daughter</h2>
+                        <p class="text-heritage-white/80 leading-relaxed mb-6">
+                            The Tanaka family knew their grandfather had immigrated from Japan in 1885, but family 
+                            stories suggested a noble past that seemed impossible to verify. Traditional records were 
+                            scarce, and the family had nearly given up hope.
+                        </p>
+                        <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-white/10">
+                            <h3 class="text-xl font-semibold mb-3 text-heritage-gold">The Discovery</h3>
+                            <p class="text-heritage-white/70 text-sm leading-relaxed mb-4">
+                                Through DNA analysis combined with meticulous research in Japanese feudal archives, 
+                                we discovered that the family descended from a minor samurai clan from Kyoto. 
+                                The migration to Hawaii's sugar plantations in 1885 was part of a larger pattern 
+                                of noble families seeking new opportunities after the Meiji Restoration.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Duration:</span>
+                                    <span class="text-heritage-white/60 ml-2">14 months</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Documents:</span>
+                                    <span class="text-heritage-white/60 ml-2">31 verified</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Countries:</span>
+                                    <span class="text-heritage-white/60 ml-2">Japan, USA</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">DNA Matches:</span>
+                                    <span class="text-heritage-white/60 ml-2">8 relatives</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/10 pt-4">
+                            <p class="text-heritage-gold italic">
+                                "Learning about our samurai heritage has given our family a profound sense of identity 
+                                and connection to Japanese history we never knew we had."
+                            </p>
+                            <p class="text-heritage-white/60 text-sm mt-2">— Mary Tanaka, Honolulu, HI</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case Study 3 -->
+                <article class="group">
+                    <div class="aspect-video bg-white/5 border border-white/10 relative overflow-hidden mb-8">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-heritage-blue to-transparent opacity-60"></div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 text-sm">
+                            <span class="px-3 py-1 bg-heritage-gold/20 text-heritage-gold rounded-full">African Heritage</span>
+                            <span class="px-3 py-1 bg-heritage-gold/20 text-heritage-gold rounded-full">Adoption Research</span>
+                            <span class="text-heritage-white/60">4 generations • 3 countries</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-heritage-gold">The Scholar's Legacy</h2>
+                        <p class="text-heritage-white/80 leading-relaxed mb-6">
+                            Jennifer Rodriguez was adopted as an infant and had spent decades searching for her 
+                            biological roots. With limited information and sealed adoption records, her case seemed 
+                            impossible—until DNA testing opened new doors.
+                        </p>
+                        <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-white/10">
+                            <h3 class="text-xl font-semibold mb-3 text-heritage-gold">The Connection</h3>
+                            <p class="text-heritage-white/70 text-sm leading-relaxed mb-4">
+                                Advanced DNA analysis connected Jennifer to the Mensah family from Ghana. Through 
+                                collaboration with local researchers, we traced her biological mother's educational 
+                                journey from colonial Ghana to London in the 1960s. The discovery revealed a family 
+                                tradition of scholarship spanning four generations.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Duration:</span>
+                                    <span class="text-heritage-white/60 ml-2">16 months</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Documents:</span>
+                                    <span class="text-heritage-white/60 ml-2">18 verified</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Countries:</span>
+                                    <span class="text-heritage-white/60 ml-2">Ghana, UK, USA</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Family Reunited:</span>
+                                    <span class="text-heritage-white/60 ml-2">Yes, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/10 pt-4">
+                            <p class="text-heritage-gold italic">
+                                "Finding my biological family and learning about our educational legacy has been 
+                                the most profound experience of my life. I finally feel complete."
+                            </p>
+                            <p class="text-heritage-white/60 text-sm mt-2">— Jennifer Rodriguez, Miami, FL</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Case Study 4 -->
+                <article class="group">
+                    <div class="aspect-video bg-white/5 border border-white/10 relative overflow-hidden mb-8">
+                        <img src="https://images.unsplash.com/photo-1543269664-56d93c1b41a6?auto=format&fit=crop&q=80&w=1200"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-heritage-blue to-transparent opacity-60"></div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 text-sm">
+                            <span class="px-3 py-1 bg-heritage-gold/20 text-heritage-gold rounded-full">French Heritage</span>
+                            <span class="px-3 py-1 bg-heritage-gold/20 text-heritage-gold rounded-full">Military Records</span>
+                            <span class="text-heritage-white/60">8 generations • 2 countries</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-heritage-gold">The Silent Weaver of Colmar</h2>
+                        <p class="text-heritage-white/80 leading-relaxed mb-6">
+                            The Schmidt family had always heard stories about a French ancestor who was a 
+                            revolutionary soldier, but no records could be found. The family had nearly given up 
+                            on verifying this piece of their history.
+                        </p>
+                        <div class="bg-[#F7F3E9]/5 p-6 rounded-lg border border-white/10">
+                            <h3 class="text-xl font-semibold mb-3 text-heritage-gold">The Revelation</h3>
+                            <p class="text-heritage-white/70 text-sm leading-relaxed mb-4">
+                                Our researchers discovered that the family name had been changed from "Schmidt" 
+                                to the French "Schmidt" during the French Revolution. Through careful analysis of 
+                                lost parish records in Alsace, we uncovered the story of Jean-Pierre Schmidt, 
+                                a weaver who fought in the revolutionary army and later established a textile 
+                                business that survived the turmoil.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 text-sm">
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Duration:</span>
+                                    <span class="text-heritage-white/60 ml-2">12 months</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Documents:</span>
+                                    <span class="text-heritage-white/60 ml-2">23 verified</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Countries:</span>
+                                    <span class="text-heritage-white/60 ml-2">France, USA</span>
+                                </div>
+                                <div>
+                                    <span class="text-heritage-gold font-semibold">Business Legacy:</span>
+                                    <span class="text-heritage-white/60 ml-2">Still operating</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-t border-white/10 pt-4">
+                            <p class="text-heritage-gold italic">
+                                "Discovering our French revolutionary ancestor and the textile business still 
+                                run by distant cousins in Paris has been absolutely incredible."
+                            </p>
+                            <p class="text-heritage-white/60 text-sm mt-2">— Marie Schmidt, New York, NY</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH STATISTICS -->
+    <section class="py-20 px-10 bg-heritage-white text-heritage-blue">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-serif mb-4">Our Research Impact</h2>
+                <div class="w-24 h-1 bg-heritage-gold mx-auto"></div>
+                <p class="mt-6 text-lg text-heritage-blue/70">Numbers that tell the story of families reunited</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-serif text-heritage-gold mb-4">5,000+</div>
+                    <h3 class="text-xl font-semibold mb-2">Families Served</h3>
+                    <p class="text-heritage-blue/70 text-sm">Each with a unique story of discovery and connection</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-serif text-heritage-gold mb-4">12,000+</div>
+                    <h3 class="text-xl font-semibold mb-2">Generations Traced</h3>
+                    <p class="text-heritage-blue/70 text-sm">Spanning continents and centuries of family history</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-serif text-heritage-gold mb-4">3,500+</div>
+                    <h3 class="text-xl font-semibold mb-2">Living Relatives Connected</h3>
+                    <p class="text-heritage-blue/70 text-sm">Reuniting families separated by time and distance</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-serif text-heritage-gold mb-4">98%</div>
+                    <h3 class="text-xl font-semibold mb-2">Success Rate</h3>
+                    <p class="text-heritage-blue/70 text-sm">Breaking through brick walls that seemed impossible</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-20 px-10 bg-gradient-to-b from-heritage-blue to-black/20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-serif mb-6">Ready to Write Your Family's Story?</h2>
+            <p class="text-xl text-heritage-white/80 mb-8">
+                Every family has a story waiting to be discovered. Let our expert researchers help you 
+                uncover the chapters of your ancestral heritage.
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="./process.html" class="gold-btn">Start Your Research</a>
+                <a href="./services.html" class="px-8 py-3 border border-heritage-gold text-heritage-gold hover:bg-heritage-gold hover:text-heritage-blue transition-all">
+                    View Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./src/components/navbar.js"></script><script src="./main.js"></script>
+<div id="footer-container"></div><script src="./src/components/footer.js"></script></body>
+
+</html>
