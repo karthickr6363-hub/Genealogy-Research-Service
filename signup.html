@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Client Portal | Genealogy Research Service</title>
+    <title>Sign Up | Genealogy Research Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -27,21 +27,28 @@
     <div class="flex items-center justify-center min-h-screen px-4 py-12 md:px-10 md:py-20">
         <div class="max-w-6xl w-full">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-                <!-- Login Section -->
+                <!-- Sign Up Section -->
                 <div>
                     <div class="text-center mb-8 md:mb-10">
                         <a href="./index.html"
                             class="inline-block text-3xl md:text-4xl font-serif text-heritage-gold tracking-widest mb-4 md:mb-6">Heritage
                             Research</a>
                         <h1 class="text-xl md:text-2xl uppercase tracking-widest border-t border-heritage-gold/20 pt-6">
-                            Secure Client Portal</h1>
+                            Create Account</h1>
                         <p class="mt-4 text-heritage-white/80 text-sm md:text-base">
-                            Access your research progress, documents, and collaborate with our expert genealogists.
+                            Join us to start discovering your family's history and preserving your legacy.
                         </p>
                     </div>
 
                     <div class="bg-white/5 border border-white/10 p-6 md:p-10 rounded-lg backdrop-blur-sm">
                         <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm uppercase tracking-widest text-heritage-gold mb-2">Full
+                                    Name</label>
+                                <input type="text"
+                                    class="w-full bg-black/30 border border-white/10 px-4 py-3 text-heritage-white focus:border-heritage-gold outline-none transition-all"
+                                    placeholder="John Doe" />
+                            </div>
                             <div>
                                 <label class="block text-sm uppercase tracking-widest text-heritage-gold mb-2">Email
                                     Address</label>
@@ -56,27 +63,30 @@
                                     class="w-full bg-black/30 border border-white/10 px-4 py-3 text-heritage-white focus:border-heritage-gold outline-none transition-all"
                                     placeholder="••••••••" />
                             </div>
-                            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                                <div class="flex items-center">
-                                    <input type="checkbox" id="remember"
-                                        class="mr-2 accent-heritage-gold bg-black/30 border-white/10">
-                                    <label for="remember" class="text-sm text-heritage-white/70">
-                                        Remember me
-                                    </label>
-                                </div>
-                                <a href="#" class="text-sm text-heritage-gold hover:opacity-70 transition-opacity">
-                                    Forgot password?
-                                </a>
+                            <div>
+                                <label class="block text-sm uppercase tracking-widest text-heritage-gold mb-2">Confirm
+                                    Password</label>
+                                <input type="password"
+                                    class="w-full bg-black/30 border border-white/10 px-4 py-3 text-heritage-white focus:border-heritage-gold outline-none transition-all"
+                                    placeholder="••••••••" />
                             </div>
                             <button type="button" onclick="window.location.href='./dashboard.html'"
-                                class="w-full gold-btn mt-6">Access Portal</button>
+                                class="w-full gold-btn mt-6">Sign Up</button>
+
+                            <div class="text-center mt-4">
+                                <p class="text-sm text-heritage-white/70">
+                                    Already have an account?
+                                    <a href="./auth.html"
+                                        class="text-heritage-gold hover:opacity-70 transition-opacity">Login</a>
+                                </p>
+                            </div>
                         </form>
                     </div>
                 </div>
 
                 <!-- Features Section -->
                 <div>
-                    <h2 class="text-3xl font-serif mb-8 text-heritage-gold">Portal Features</h2>
+                    <h2 class="text-3xl font-serif mb-8 text-heritage-gold">Why Join Us?</h2>
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
                             <div
@@ -87,10 +97,9 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl font-semibold mb-2">Research Progress Tracking</h3>
+                                <h3 class="text-xl font-semibold mb-2">Expert Analysis</h3>
                                 <p class="text-heritage-white/70">
-                                    Monitor your family research progress in real-time with detailed milestones and
-                                    updates.
+                                    Get professional insights into your family history from certified genealogists.
                                 </p>
                             </div>
                         </div>
@@ -104,9 +113,9 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl font-semibold mb-2">Digital Document Vault</h3>
+                                <h3 class="text-xl font-semibold mb-2">Visual Heritage</h3>
                                 <p class="text-heritage-white/70">
-                                    Secure access to all your research documents, photos, and family tree files.
+                                    Build and visualize your family tree with our advanced digital tools.
                                 </p>
                             </div>
                         </div>
@@ -120,9 +129,9 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl font-semibold mb-2">Direct Researcher Communication</h3>
+                                <h3 class="text-xl font-semibold mb-2">Collaborative Research</h3>
                                 <p class="text-heritage-white/70">
-                                    Message your dedicated genealogist and receive updates directly through the portal.
+                                    Connect with researchers and family members to piecing together your history.
                                 </p>
                             </div>
                         </div>
@@ -136,23 +145,12 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl font-semibold mb-2">Secure Data Protection</h3>
+                                <h3 class="text-xl font-semibold mb-2">Secure & Private</h3>
                                 <p class="text-heritage-white/70">
-                                    Your family information is protected with enterprise-grade security and encryption.
+                                    Your data is your legacy. We ensure it's protected with top-tier security.
                                 </p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="mt-12 p-6 bg-heritage-gold/10 border border-heritage-gold/20 rounded-lg">
-                        <h3 class="text-lg font-semibold mb-3 text-heritage-gold">New to Heritage Research?</h3>
-                        <p class="text-heritage-white/80 mb-4">
-                            Create an account to start your family history journey with our expert researchers.
-                        </p>
-                        <a href="./process.html"
-                            class="inline-block text-heritage-gold font-semibold hover:opacity-70 transition-opacity">
-                            Get Started →
-                        </a>
                     </div>
                 </div>
             </div>

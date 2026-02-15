@@ -1,6 +1,15 @@
 // Navigation Component for Genealogy Research Service
 
-window.renderNavbar = function() {
+window.renderNavbar = function () {
+  const currentPath = window.location.pathname;
+  // Fallback for root path
+  const path = currentPath === '/' ? '/index.html' : currentPath;
+
+  const isActive = (href) => {
+    // Check if the current path includes the href's filename
+    return path.includes(href.replace('./', '')) ? 'text-heritage-gold font-semibold' : 'text-heritage-white hover:text-heritage-gold';
+  };
+
   return `
     <nav class="fixed top-0 left-0 right-0 z-50 bg-heritage-blue/95 backdrop-blur-sm border-b border-heritage-gold/10">
       <div class="max-w-7xl mx-auto px-6 py-4">
@@ -16,49 +25,50 @@ window.renderNavbar = function() {
           </div>
 
           <!-- Desktop Navigation -->
-          <div class="hidden md:flex items-center space-x-8">
+          <div class="hidden xl:flex items-center space-x-8">
             <!-- Home Dropdown -->
             <div class="relative group">
-              <button class="text-heritage-white hover:text-heritage-gold transition-colors flex items-center">
+              <button class="${path.includes('index.html') || path.includes('home2.html') ? 'text-heritage-gold font-semibold' : 'text-heritage-white hover:text-heritage-gold'} transition-colors flex items-center">
                 Home
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="absolute top-full left-0 mt-2 w-48 bg-heritage-blue border border-heritage-gold/20 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <a href="./index.html" class="block px-4 py-3 text-heritage-white hover:bg-heritage-gold/20 transition-colors">Home 1</a>
-                <a href="./home2.html" class="block px-4 py-3 text-heritage-white hover:bg-heritage-gold/20 transition-colors">Home 2</a>
+                <a href="./index.html" class="block px-4 py-3 ${isActive('./index.html')} transition-colors">Home 1</a>
+                <a href="./home2.html" class="block px-4 py-3 ${isActive('./home2.html')} transition-colors">Home 2</a>
               </div>
             </div>
             
-            <a href="./about.html" class="text-heritage-white hover:text-heritage-gold transition-colors">About</a>
+            <a href="./about.html" class="${isActive('./about.html')} transition-colors">About</a>
             
             <!-- Pages Dropdown -->
             <div class="relative group">
-              <button class="text-heritage-white hover:text-heritage-gold transition-colors flex items-center">
+              <button class="${path.includes('services.html') ? 'text-heritage-gold font-semibold' : 'text-heritage-white hover:text-heritage-gold'} transition-colors flex items-center">
                 Pages
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div class="absolute top-full left-0 mt-2 w-48 bg-heritage-blue border border-heritage-gold/20 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <a href="./services.html" class="block px-4 py-3 text-heritage-white hover:bg-heritage-gold/20 transition-colors">Services</a>
-                <a href="./process.html" class="block px-4 py-3 text-heritage-white hover:bg-heritage-gold/20 transition-colors">Process</a>
-                <a href="./resources.html" class="block px-4 py-3 text-heritage-white hover:bg-heritage-gold/20 transition-colors">Resources</a>
+                <a href="./services.html" class="block px-4 py-3 ${isActive('./services.html')} transition-colors">Services</a>
               </div>
             </div>
             
-            <a href="./case-studies.html" class="text-heritage-white hover:text-heritage-gold transition-colors">Stories</a>
-            <a href="./archive.html" class="text-heritage-white hover:text-heritage-gold transition-colors">Archive</a>
-            <a href="./family-trees.html" class="text-heritage-white hover:text-heritage-gold transition-colors">Family Trees</a>
-            <a href="./dashboard.html" class="text-heritage-white hover:text-heritage-gold transition-colors">Dashboard</a>
+            <a href="./case-studies.html" class="${isActive('./case-studies.html')} transition-colors">Stories</a>
+            <a href="./archive.html" class="${isActive('./archive.html')} transition-colors">Archive</a>
+            <a href="./family-trees.html" class="${isActive('./family-trees.html')} transition-colors">Family Trees</a>
+            <a href="./dashboard.html" class="${isActive('./dashboard.html')} transition-colors">Dashboard</a>
+            <a href="./signup.html" class="text-heritage-white hover:text-heritage-gold transition-colors font-semibold">
+              Sign Up
+            </a>
             <a href="./auth.html" class="bg-heritage-gold text-heritage-blue px-4 py-2 rounded font-semibold hover:bg-opacity-90 transition-all">
-              Client Portal
+              Login
             </a>
           </div>
 
           <!-- Mobile Menu Button -->
-          <button id="mobile-menu-button" class="md:hidden text-heritage-white hover:text-heritage-gold transition-colors">
+          <button id="mobile-menu-button" class="xl:hidden text-heritage-white hover:text-heritage-gold transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
@@ -66,45 +76,44 @@ window.renderNavbar = function() {
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-heritage-gold/10 pt-4">
+        <div id="mobile-menu" class="hidden xl:hidden mt-4 pb-4 border-t border-heritage-gold/10 pt-4">
           <div class="flex flex-col space-y-3">
             <!-- Mobile Home Dropdown -->
             <div class="relative">
-              <button class="text-heritage-white hover:text-heritage-gold transition-colors py-2 flex items-center justify-between w-full" onclick="toggleMobileHome()">
+              <button class="${path.includes('index.html') || path.includes('home2.html') ? 'text-heritage-gold font-semibold' : 'text-heritage-white hover:text-heritage-gold'} transition-colors py-2 flex items-center justify-between w-full" onclick="toggleMobileHome()">
                 Home
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div id="mobile-home-dropdown" class="hidden mt-2 ml-4 space-y-2">
-                <a href="./index.html" class="block text-heritage-white/80 hover:text-heritage-gold transition-colors py-1">• Home 1</a>
-                <a href="./home2.html" class="block text-heritage-white/80 hover:text-heritage-gold transition-colors py-1">• Home 2</a>
+                <a href="./index.html" class="block ${isActive('./index.html')} transition-colors py-1">• Home 1</a>
+                <a href="./home2.html" class="block ${isActive('./home2.html')} transition-colors py-1">• Home 2</a>
               </div>
             </div>
             
-            <a href="./about.html" class="text-heritage-white hover:text-heritage-gold transition-colors py-2">About</a>
+            <a href="./about.html" class="${isActive('./about.html')} transition-colors py-2">About</a>
             
             <!-- Mobile Pages Dropdown -->
             <div class="relative">
-              <button class="text-heritage-white hover:text-heritage-gold transition-colors py-2 flex items-center justify-between w-full" onclick="toggleMobilePages()">
+              <button class="${path.includes('services.html') ? 'text-heritage-gold font-semibold' : 'text-heritage-white hover:text-heritage-gold'} transition-colors py-2 flex items-center justify-between w-full" onclick="toggleMobilePages()">
                 Pages
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </button>
               <div id="mobile-pages-dropdown" class="hidden mt-2 ml-4 space-y-2">
-                <a href="./services.html" class="block text-heritage-white/80 hover:text-heritage-gold transition-colors py-1">• Services</a>
-                <a href="./process.html" class="block text-heritage-white/80 hover:text-heritage-gold transition-colors py-1">• Process</a>
-                <a href="./resources.html" class="block text-heritage-white/80 hover:text-heritage-gold transition-colors py-1">• Resources</a>
+                <a href="./services.html" class="block ${isActive('./services.html')} transition-colors py-1">• Services</a>
               </div>
             </div>
             
-            <a href="./case-studies.html" class="text-heritage-white hover:text-heritage-gold transition-colors py-2">Stories</a>
-            <a href="./archive.html" class="text-heritage-white hover:text-heritage-gold transition-colors py-2">Archive</a>
-            <a href="./family-trees.html" class="text-heritage-white hover:text-heritage-gold transition-colors py-2">Family Trees</a>
-            <a href="./dashboard.html" class="text-heritage-white hover:text-heritage-gold transition-colors py-2">Dashboard</a>
+            <a href="./case-studies.html" class="${isActive('./case-studies.html')} transition-colors py-2">Stories</a>
+            <a href="./archive.html" class="${isActive('./archive.html')} transition-colors py-2">Archive</a>
+            <a href="./family-trees.html" class="${isActive('./family-trees.html')} transition-colors py-2">Family Trees</a>
+            <a href="./dashboard.html" class="${isActive('./dashboard.html')} transition-colors py-2">Dashboard</a>
+            <a href="./signup.html" class="${isActive('./signup.html')} transition-colors py-2 font-semibold">Sign Up</a>
             <a href="./auth.html" class="bg-heritage-gold text-heritage-blue px-4 py-2 rounded font-semibold hover:bg-opacity-90 transition-all text-center">
-              Client Portal
+              Login
             </a>
           </div>
         </div>
@@ -113,10 +122,10 @@ window.renderNavbar = function() {
   `;
 };
 
-window.initMobileMenu = function() {
+window.initMobileMenu = function () {
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
-  
+
   if (mobileMenuButton && mobileMenu) {
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
@@ -124,14 +133,14 @@ window.initMobileMenu = function() {
   }
 };
 
-window.toggleMobilePages = function() {
+window.toggleMobilePages = function () {
   const mobilePagesDropdown = document.getElementById('mobile-pages-dropdown');
   if (mobilePagesDropdown) {
     mobilePagesDropdown.classList.toggle('hidden');
   }
 };
 
-window.toggleMobileHome = function() {
+window.toggleMobileHome = function () {
   const mobileHomeDropdown = document.getElementById('mobile-home-dropdown');
   if (mobileHomeDropdown) {
     mobileHomeDropdown.classList.toggle('hidden');

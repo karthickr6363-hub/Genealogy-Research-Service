@@ -1,13 +1,13 @@
 // Footer Component for Genealogy Research Service
 
-window.renderFooter = function() {
+window.renderFooter = function () {
   return `
     <footer class="bg-heritage-blue border-t border-heritage-gold/10 text-heritage-white">
       <div class="max-w-7xl mx-auto px-6 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           <!-- Company Info -->
           <div class="col-span-1 md:col-span-2">
-            <div class="flex items-center space-x-2 mb-6">
+            <div class="flex items-center justify-center md:justify-start space-x-2 mb-6">
               <div class="w-10 h-10 bg-heritage-gold rounded-full flex items-center justify-center">
                 <svg class="w-6 h-6 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z"/>
@@ -15,11 +15,11 @@ window.renderFooter = function() {
               </div>
               <span class="text-xl font-serif">Heritage Research</span>
             </div>
-            <p class="text-heritage-white/70 leading-relaxed mb-6 max-w-md">
+            <p class="text-heritage-white/70 leading-relaxed mb-6 max-w-md mx-auto md:mx-0">
               Tracing lineages and preserving legacies through expert historical research. 
               Discover your family's story with our professional genealogical services.
             </p>
-            <div class="flex space-x-4">
+            <div class="flex justify-center md:justify-start space-x-4">
               <a href="#" class="text-heritage-white/60 hover:text-heritage-gold transition-colors">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -53,10 +53,8 @@ window.renderFooter = function() {
           <div>
             <h3 class="text-heritage-gold font-semibold mb-4 uppercase tracking-wider text-sm">Resources</h3>
             <ul class="space-y-2">
-              <li><a href="./resources.html" class="text-heritage-white/70 hover:text-heritage-gold transition-colors">Research Guide</a></li>
               <li><a href="./case-studies.html" class="text-heritage-white/70 hover:text-heritage-gold transition-colors">Case Studies</a></li>
               <li><a href="./archive.html" class="text-heritage-white/70 hover:text-heritage-gold transition-colors">Archive</a></li>
-              <li><a href="./process.html" class="text-heritage-white/70 hover:text-heritage-gold transition-colors">Our Process</a></li>
             </ul>
           </div>
         </div>
