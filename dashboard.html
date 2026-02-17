@@ -31,8 +31,9 @@
         <!-- Dashboard Header -->
         <header class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
             <div>
-                <p class="text-heritage-gold uppercase tracking-widest text-sm font-semibold mb-2">Genealogy Research
-                    Service</p>
+                <a href="./index.html"
+                    class="inline-block text-2xl font-serif text-heritage-gold tracking-widest mb-4 hover:opacity-80 transition-opacity">Heritage
+                    Research</a>
                 <h1 class="text-4xl font-serif mb-2">Client Dashboard</h1>
                 <p class="text-heritage-gold uppercase tracking-widest text-sm italic">Welcome back, Arthur Sinclair</p>
                 <p class="text-heritage-white/70 mt-2">Last login: March 10, 2024 at 2:45 PM</p>
@@ -46,7 +47,8 @@
                     class="px-4 py-2 border border-heritage-gold text-heritage-gold hover:bg-heritage-gold hover:text-heritage-blue transition-all">
                     Account Settings
                 </button>
-                <button class="px-4 py-2 bg-red-600 text-white font-semibold hover:bg-red-700 transition-all">
+                <button id="logout-btn"
+                    class="px-4 py-2 bg-red-600 text-white font-semibold hover:bg-red-700 transition-all">
                     Logout
                 </button>
             </div>
@@ -306,6 +308,12 @@
 
     <!-- Footer removed for cleaner dashboard interface -->
 
+    <script>
+        document.getElementById('logout-btn').addEventListener('click', () => {
+            // In a real app, you'd clear session/tokens here
+            window.location.href = './index.html';
+        });
+    </script>
 </body>
 
 </html>

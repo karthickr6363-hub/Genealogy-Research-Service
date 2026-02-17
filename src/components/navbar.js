@@ -59,10 +59,10 @@ window.renderNavbar = function () {
             <a href="./archive.html" class="${isActive('./archive.html')} transition-colors">Archive</a>
             <a href="./family-trees.html" class="${isActive('./family-trees.html')} transition-colors">Family Trees</a>
             <a href="./dashboard.html" class="${isActive('./dashboard.html')} transition-colors">Dashboard</a>
-            <a href="./signup.html" class="text-heritage-white hover:text-heritage-gold transition-colors font-semibold">
+            <a href="./signup.html" class="bg-heritage-gold text-heritage-blue px-4 py-2 rounded font-semibold hover:bg-opacity-90 transition-all">
               Sign Up
             </a>
-            <a href="./auth.html" class="bg-heritage-gold text-heritage-blue px-4 py-2 rounded font-semibold hover:bg-opacity-90 transition-all">
+            <a href="./auth.html" class="border border-heritage-gold text-heritage-gold px-4 py-2 rounded font-semibold hover:bg-heritage-gold hover:text-heritage-blue transition-all">
               Login
             </a>
           </div>
@@ -111,8 +111,10 @@ window.renderNavbar = function () {
             <a href="./archive.html" class="${isActive('./archive.html')} transition-colors py-2">Archive</a>
             <a href="./family-trees.html" class="${isActive('./family-trees.html')} transition-colors py-2">Family Trees</a>
             <a href="./dashboard.html" class="${isActive('./dashboard.html')} transition-colors py-2">Dashboard</a>
-            <a href="./signup.html" class="${isActive('./signup.html')} transition-colors py-2 font-semibold">Sign Up</a>
-            <a href="./auth.html" class="bg-heritage-gold text-heritage-blue px-4 py-2 rounded font-semibold hover:bg-opacity-90 transition-all text-center">
+            <a href="./signup.html" class="bg-heritage-gold text-heritage-blue px-4 py-2 rounded font-semibold hover:bg-opacity-90 transition-all text-center">
+              Sign Up
+            </a>
+            <a href="./auth.html" class="border border-heritage-gold text-heritage-gold px-4 py-2 rounded font-semibold hover:bg-heritage-gold hover:text-heritage-blue transition-all text-center">
               Login
             </a>
           </div>

@@ -194,7 +194,8 @@
       <h2 class="text-3xl md:text-4xl font-serif mb-4 text-heritage-white">Trusted by Families Worldwide</h2>
       <p class="text-heritage-white/60">Our commitment to excellence has made us a leader in genealogical research</p>
     </div>
-    <div class="flex flex-col md:flex-row justify-around items-center gap-12 text-center text-heritage-white">
+    <div
+      class="grid grid-cols-2 lg:flex lg:flex-row justify-around items-center gap-12 text-center text-heritage-white max-w-6xl mx-auto px-10">
       <div class="group">
         <span class="text-5xl font-serif text-heritage-gold block mb-2" id="stat-years">15+</span>
         <span class="text-sm uppercase tracking-widest text-heritage-white/60">Years of Research</span>
@@ -226,28 +227,29 @@
   <!-- FEATURED FAMILY STORIES -->
   <section class="py-24 px-10 bg-[#0a1929] border-t border-heritage-gold/5 text-heritage-white">
     <div class="max-w-7xl mx-auto">
-      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+      <div
+        class="flex flex-col lg:flex-row justify-between items-center lg:items-end mb-16 gap-6 text-center lg:text-left">
         <div class="max-w-2xl">
           <h2 class="text-4xl md:text-5xl font-serif mb-4 text-heritage-white">Featured Family Stories</h2>
           <p class="text-heritage-white/60">Across generations and continents, these lives were reclaimed from the
             archives. Each discovery represents not just a name, but a story waiting to be told.</p>
         </div>
         <a href="case-studies.html"
-          class="text-heritage-gold uppercase tracking-widest text-sm border-b border-heritage-gold/40 pb-1 hover:opacity-70 transition-opacity">Explore
+          class="text-heritage-gold uppercase tracking-widest text-sm border-b border-heritage-gold/40 pb-1 hover:opacity-70 transition-opacity whitespace-nowrap">Explore
           All Stories →</a>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <!-- Story 1 -->
         <div
-          class="group relative aspect-[4/5] md:aspect-[16/10] overflow-hidden border border-white/10 hover:border-heritage-gold/30 transition-all cursor-pointer">
+          class="group relative aspect-[4/5] md:aspect-square overflow-hidden border border-white/10 hover:border-heritage-gold/30 transition-all cursor-pointer">
           <img src="https://images.unsplash.com/photo-1543269664-56d93c1b41a6?auto=format&fit=crop&q=80&w=1200"
             alt="Archives"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-[#102A43] via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity">
           </div>
-          <div class="absolute bottom-4 left-4 right-4 md:bottom-10 md:left-10 md:right-10 leading-relaxed">
+          <div class="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-10 md:right-10 leading-relaxed">
             <span class="text-[10px] uppercase tracking-widest text-heritage-gold mb-2 block">Belfast to Boston,
               1842</span>
             <h3
@@ -266,14 +268,14 @@
 
         <!-- Story 2 -->
         <div
-          class="group relative aspect-[4/5] md:aspect-[16/10] overflow-hidden border border-white/10 hover:border-heritage-gold/30 transition-all cursor-pointer">
+          class="group relative aspect-[4/5] md:aspect-square overflow-hidden border border-white/10 hover:border-heritage-gold/30 transition-all cursor-pointer">
           <img src="https://images.unsplash.com/photo-1572947650440-e8a97ef053b2?auto=format&fit=crop&q=80&w=1200"
             alt="Old Documents"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-[#102A43] via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity">
           </div>
-          <div class="absolute bottom-4 left-4 right-4 md:bottom-10 md:left-10 md:right-10 leading-relaxed">
+          <div class="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-10 md:right-10 leading-relaxed">
             <span class="text-[10px] uppercase tracking-widest text-heritage-gold mb-2 block">Alsace Borderlands,
               1789</span>
             <h3
@@ -292,14 +294,14 @@
 
         <!-- Story 3 -->
         <div
-          class="group relative aspect-[4/5] md:aspect-[16/10] overflow-hidden border border-white/10 hover:border-heritage-gold/30 transition-all cursor-pointer">
+          class="group relative aspect-[4/5] md:aspect-square overflow-hidden border border-white/10 hover:border-heritage-gold/30 transition-all cursor-pointer">
           <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&q=80&w=1200"
             alt="Japanese Temple"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-[#102A43] via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity">
           </div>
-          <div class="absolute bottom-4 left-4 right-4 md:bottom-10 md:left-10 md:right-10 leading-relaxed">
+          <div class="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-10 md:right-10 leading-relaxed">
             <span class="text-[10px] uppercase tracking-widest text-heritage-gold mb-2 block">Kyoto to Hawaii,
               1885</span>
             <h3
@@ -318,14 +320,14 @@
 
         <!-- Story 4 -->
         <div
-          class="group relative aspect-[4/5] md:aspect-[16/10] overflow-hidden border border-white/10 hover:border-heritage-gold/30 transition-all cursor-pointer">
+          class="group relative aspect-[4/5] md:aspect-square overflow-hidden border border-white/10 hover:border-heritage-gold/30 transition-all cursor-pointer">
           <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200"
             alt="African Landscape"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
           <div
             class="absolute inset-0 bg-gradient-to-t from-[#102A43] via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity">
           </div>
-          <div class="absolute bottom-4 left-4 right-4 md:bottom-10 md:left-10 md:right-10 leading-relaxed">
+          <div class="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-10 md:right-10 leading-relaxed">
             <span class="text-[10px] uppercase tracking-widest text-heritage-gold mb-2 block">Ghana to London,
               1962</span>
             <h3
