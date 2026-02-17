@@ -42,18 +42,7 @@ window.renderNavbar = function () {
             
             <a href="./about.html" class="${isActive('./about.html')} transition-colors">About</a>
             
-            <!-- Pages Dropdown -->
-            <div class="relative group">
-              <button class="${path.includes('services.html') ? 'text-heritage-gold font-semibold' : 'text-heritage-white hover:text-heritage-gold'} transition-colors flex items-center">
-                Pages
-                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div class="absolute top-full left-0 mt-2 w-48 bg-heritage-blue border border-heritage-gold/20 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <a href="./services.html" class="block px-4 py-3 ${isActive('./services.html')} transition-colors">Services</a>
-              </div>
-            </div>
+            <a href="./services.html" class="${isActive('./services.html')} transition-colors">Services</a>
             
             <a href="./case-studies.html" class="${isActive('./case-studies.html')} transition-colors">Stories</a>
             <a href="./archive.html" class="${isActive('./archive.html')} transition-colors">Archive</a>
@@ -94,18 +83,7 @@ window.renderNavbar = function () {
             
             <a href="./about.html" class="${isActive('./about.html')} transition-colors py-2">About</a>
             
-            <!-- Mobile Pages Dropdown -->
-            <div class="relative">
-              <button class="${path.includes('services.html') ? 'text-heritage-gold font-semibold' : 'text-heritage-white hover:text-heritage-gold'} transition-colors py-2 flex items-center justify-between w-full" onclick="toggleMobilePages()">
-                Pages
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div id="mobile-pages-dropdown" class="hidden mt-2 ml-4 space-y-2">
-                <a href="./services.html" class="block ${isActive('./services.html')} transition-colors py-1">• Services</a>
-              </div>
-            </div>
+            <a href="./services.html" class="${isActive('./services.html')} transition-colors py-2">Services</a>
             
             <a href="./case-studies.html" class="${isActive('./case-studies.html')} transition-colors py-2">Stories</a>
             <a href="./archive.html" class="${isActive('./archive.html')} transition-colors py-2">Archive</a>
@@ -135,12 +113,6 @@ window.initMobileMenu = function () {
   }
 };
 
-window.toggleMobilePages = function () {
-  const mobilePagesDropdown = document.getElementById('mobile-pages-dropdown');
-  if (mobilePagesDropdown) {
-    mobilePagesDropdown.classList.toggle('hidden');
-  }
-};
 
 window.toggleMobileHome = function () {
   const mobileHomeDropdown = document.getElementById('mobile-home-dropdown');
