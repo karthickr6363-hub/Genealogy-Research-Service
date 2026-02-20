@@ -15,14 +15,14 @@ window.renderNavbar = function () {
       <div class="max-w-7xl mx-auto px-6 py-4">
         <div class="flex justify-between items-center">
           <!-- Logo -->
-          <div class="flex items-center space-x-2">
+          <a href="./index.html" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
             <div class="w-10 h-10 bg-heritage-gold rounded-full flex items-center justify-center">
               <svg class="w-6 h-6 text-heritage-blue" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z"/>
               </svg>
             </div>
             <span class="text-xl font-serif text-heritage-white">Heritage Research</span>
-          </div>
+          </a>
 
           <!-- Desktop Navigation -->
           <div class="hidden xl:flex items-center space-x-8">
